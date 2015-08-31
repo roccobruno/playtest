@@ -2,6 +2,10 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+POST   /booking                                          controllers.BookingController.saveBooking
+DELETE /booking/customer/:customerId                      controllers.BookingController.deleteBooking(customerId:String)
+GET    /booking/customer/:customerId                     controllers.BookingController.getBookings(customerId:String)
+
 # Home page
 GET     /                           controllers.Application.index
 
