@@ -61,6 +61,7 @@ class BookingMongoRepositorySpec extends  MongoSpecSupport with Awaiting  with S
       bookings.seq(0).treatments.size should be(2)
       bookings.seq(0).treatments.contains("2") shouldBe true
       bookings.seq(0).treatments.contains("1") shouldBe true
+      bookings.seq(0).status shouldBe("REQUESTED")
     }
 
     "delete all the records for the given customerId" in new Setup {

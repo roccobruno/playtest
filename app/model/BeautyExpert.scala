@@ -24,7 +24,7 @@ case class BeautyExpertAvailability(days: Seq[(DAY_OF_WEEK,Seq[TIME_OF_DAY])])
 
 object BeautyExpertAvailability {
 
-  def apply() = BeautyExpertAvailability(Seq(
+  def apply():BeautyExpertAvailability = BeautyExpertAvailability(Seq(
     (DAY_OF_WEEK.MONDAY,Seq(TIME_OF_DAY.MORNING,TIME_OF_DAY.AFTERNOON,TIME_OF_DAY.EVENING)),
     (DAY_OF_WEEK.TUESDAY,Seq(TIME_OF_DAY.MORNING,TIME_OF_DAY.AFTERNOON,TIME_OF_DAY.EVENING)),
     (DAY_OF_WEEK.WEDNESDAY,Seq(TIME_OF_DAY.MORNING,TIME_OF_DAY.AFTERNOON,TIME_OF_DAY.EVENING)),
